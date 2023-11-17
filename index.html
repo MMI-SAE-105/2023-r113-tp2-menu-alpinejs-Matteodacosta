@@ -17,7 +17,7 @@
     <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
       menu
     </button>
-    <nav id="mainNav" x-show="menuIsOpen">
+    <nav id="mainNav" x-show="menuIsOpen" x-transition>
       <ul>
         <li><a href="#">item 1</a></li>
         <li><a href="#">item 2</a></li>
