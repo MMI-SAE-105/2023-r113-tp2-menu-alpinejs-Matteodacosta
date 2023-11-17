@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsopen: true}">
+<html lang="fr" x-data="{menuIsOpen: false}">
 
 <head>
   <meta charset="UTF-8" />
@@ -14,8 +14,10 @@
   <!-- header>h1{Test de menu} -->
   <header>
     <h1>Test de menu</h1>
-    <button aria-controls="mainNav">menu</button>
-    <nav id="mainNav" x-show="menuIsopen">
+    <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
+      menu
+    </button>
+    <nav id="mainNav" x-show="menuIsOpen">
       <ul>
         <li><a href="#">item 1</a></li>
         <li><a href="#">item 2</a></li>
