@@ -14,10 +14,10 @@
   <!-- header>h1{Test de menu} -->
   <header>
     <h1>Test de menu</h1>
-    <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
+    <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
       menu
     </button>
-    <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
+    <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
       <ul>
         <li><a href="#">item 1</a></li>
         <li><a href="#">item 2</a></li>
